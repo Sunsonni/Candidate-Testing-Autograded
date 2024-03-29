@@ -3,7 +3,7 @@ const input = require('readline-sync');
 // TODO 2: modify your quiz app to ask 5 questions //
 
 // TODO 1.1a: Define candidateName // 
-let candidateName = "Candice";
+let candidateName = "";
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
@@ -11,7 +11,14 @@ let candidateAnswer = "";
 
 
 //TODO: Variables for Part 2
-let questions;
+let questions = [
+  "Who was the first American woman in space? ", 
+  "True or false: 5 kilometer == 5000 meters? ",
+  "(5 + 3)/2 * 10 = ? ",
+  "Given the array [8, 'Orbit','Trajectory', 45], what entry is at index 2?",
+  ""
+
+];
 let correctAnswers;
 let candidateAnswers;
 
@@ -51,7 +58,6 @@ function runProgram() {
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
-runProgram();
 
 // ----------- Don't write any code or change any code below this line ---------- //
 module.exports = {
